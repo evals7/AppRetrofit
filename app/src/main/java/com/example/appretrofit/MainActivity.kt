@@ -1,4 +1,4 @@
-package com.example.appretrofit
+package com.example.comunicacionespeticionesproduct
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,37 +11,17 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.appretrofit.ui.theme.AppRetrofitTheme
+import com.example.comunicacionespeticionesproduct.ui.screens.ProductScreen
+import com.example.comunicacionespeticionesproduct.ui.theme.ComunicacionesPeticionesProductTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            AppRetrofitTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+            ComunicacionesPeticionesProductTheme {
+                ProductScreen()
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    AppRetrofitTheme {
-        Greeting("Android")
     }
 }

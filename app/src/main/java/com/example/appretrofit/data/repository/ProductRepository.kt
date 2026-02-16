@@ -1,4 +1,4 @@
-package com.example.comunicacionespeticionesproduct.data.repository
+package com.example.appretrofit.data.repository
 
 import com.example.comunicacionespeticionesproduct.data.model.Product
 import com.example.comunicacionespeticionesproduct.data.remote.RetrofitInstance

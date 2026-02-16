@@ -1,25 +1,18 @@
-package com.example.comunicacionespeticionesproduct
+package com.example.appretrofit
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.comunicacionespeticionesproduct.ui.screens.ProductScreen
-import com.example.comunicacionespeticionesproduct.ui.theme.ComunicacionesPeticionesProductTheme
+import com.example.appretrofit.ui.screens.ProductScreen
+import com.example.appretrofit.ui.theme.AppRetrofitTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            ComunicacionesPeticionesProductTheme {
+            AppRetrofitTheme {
                 ProductScreen()
             }
         }

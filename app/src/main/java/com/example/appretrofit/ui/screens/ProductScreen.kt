@@ -73,7 +73,8 @@ fun ProductScreen(viewModel: ProductViewModel = viewModel()){
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ){
                 items(products) { product ->
-                    val secureUrl = product.image.replace("http://", "https://") //para reemplazar el protocolo http por https y que Android no lo bloquee, gracias Chatti
+                    //las url de las imagenes son HTTP y Android 9 no las reconoce, con esta variable las sustituimos por https
+                    val secureUrl = product.image.replace("http://", "https://")
                     Card(
                         modifier = Modifier.fillMaxWidth(),
                         elevation = CardDefaults.cardElevation(4.dp),

@@ -7,7 +7,7 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.appretrofit.data.repository.ProductRepository
-import com.example.comunicacionespeticionesproduct.data.model.Product
+import com.example.appretrofit.data.model.Product
 import kotlinx.coroutines.launch
 
 

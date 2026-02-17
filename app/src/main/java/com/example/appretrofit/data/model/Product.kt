@@ -1,4 +1,4 @@
-package com.example.comunicacionespeticionesproduct.data.model 
+package com.example.appretrofit.data.model
 
 data class Product(
     val name: String,
